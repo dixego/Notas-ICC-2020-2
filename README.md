@@ -1,6 +1,6 @@
 Pruebas! :D 
 
-esto es un (enlace al HEADING)[#heading]
+esto es un [enlace al HEADING](#heading)
 
 
 # HEADING
