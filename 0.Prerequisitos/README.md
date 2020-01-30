@@ -1,5 +1,5 @@
 * [Introducción](#introducción)
-* [Linux y la línea de comandos](#linux-y-la-línea-de-comandos)
+* [Linux y la terminal](#linux-y-la-terminal)
 * [Manipulando el sistema de archivos](#manipulando-el-sistema-de-archivos)
 
 # Introducción
@@ -11,15 +11,15 @@ Computación.
 
 El propósito del curso propedéutico es enseñar a los estudiantes varias habilidades
 relacionadas con el uso de su computadora que resultan indispensables de saber durante el
-transcurso de la carrera, tales como el manejo esencial de la linea de comandos, el
-sistema de archivos en Linux, el editor de texto Emacs, y el uso básico de Git.
+transcurso de la carrera, tales como el manejo esencial de la terminal, el sistema de
+archivos en Linux, el editor de texto Emacs, y el uso básico de Git.
 
 Dada la aparente composición de este grupo, muchos de los alumnos inscritos podrían no
 tener este conocimiento antecedente. Con el fin de alivianar tal situación, este documento
 pretende mostrar aquél conocimiento esencial para poder elaborar las prácitcas de
 laboratorio cómodamente.
 
-# Linux y la línea de comandos
+# Linux y la terminal
 
 Es honorable tradición de la carrera de Ciencias de la Computación utilizar como sistema
 operativo alguna distribución de Linux. Esto ofrece diversas ventajas; entre ellas,
@@ -63,7 +63,7 @@ actual con el comando `pwd`:
 
 (En adelante, los ejemplos de comandos siguen el siguiente formato: el *prompt* del shell
 es aquello que precede al símbolo `$`, lo que lo sucede es el comando que se debe entrar,
-y las lineas siguientes que no estén precedidas por el *prompt* representan la salida del
+y las líneas siguientes que no estén precedidas por el *prompt* representan la salida del
 comando).
 
 ```
@@ -92,7 +92,7 @@ usuario@computadora:~$ ls
 Desktop   Directorio    Documents   Music   Pictures    Templates   Videos
 ```
 
-Podemos cambiar el directorio actual con el comando `mkdir`:
+Podemos cambiar el directorio actual con el comando `cd`:
 
 ```
 usuario@computadora:~$ cd Directorio
@@ -100,3 +100,11 @@ usuario@computadora:~/Directorio$ pwd
 /home/usuario/Directorio
 ```
 
+Todo lo que se pueda hacer con un mouse desde un explorador de archivos con interfaz
+gráfica se puede hacer de manera equivalente con algún comando desde la terminal (y una
+vez que uno se acostumbra, hacerlo desde la terminal suele ser más rápido).
+
+Para una *overview* un poco más a profundidad de la términal y los comandos, se recomienda
+leer [esta *cheat sheet*](https://www.git-tower.com/blog/command-line-cheat-sheet/). Más
+allá de eso, se les recuerda que Google (o DuckDuckGo, o su buscador de preferencia) es su
+amigo. 
