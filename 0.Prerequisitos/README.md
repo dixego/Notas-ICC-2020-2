@@ -38,3 +38,20 @@ es utilizar el Subsistema de Windows para Linux (por ejemplo, instalando [Ubuntu
 Windows 10](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows#0) , con el
 cual podrán utilizar una terminal ejecutando un kernel de Linux como si fuera una
 aplicación cualquiera en su computadora con Windows 10.
+
+Una vez instalada una distribución de Linux, habrá que familiarizarse con el uso de la
+terminal para manipular el sistema de archivos e invocar comandos. 
+
+Busque usted un programa llamado "Terminal" (o algo parecido) en su computadora y
+ejecútelo. El resultado debería ser una ventana con texto como el siguiente (o similar):
+
+```
+usuario@computadora $
+```
+
+En esta ventana podremos utilizar el teclado para escribir comandos y presionar `Enter`
+para ejecutarlos y observar el resultado. Aprendamos a ahora a hacer algunas cosas útiles
+con la terminal.
+
+
+
