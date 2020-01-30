@@ -1,5 +1,6 @@
 * [Introducción](#introducción)
 * [Linux y la línea de comandos](#linux-y-la-línea-de-comandos)
+* [Manipulando el sistema de archivos](#manipulando-el-sistema-de-archivos)
 
 # Introducción
 
@@ -26,7 +27,7 @@ instalar y configurar herramientas de desarrollo de software tiende a ser
 considerablemente más fácil en sistemas Linux que en, por ejemplo, Windows.
 
 Se recomienda a los estudiantes instalar en sus computadoras una distribución de Linux con
-el fin de más fácilmente acoplarse a las actividades del curso (*NOTA:* el procedimiento
+el fin de más fácilmente acoplarse a las actividades del curso (**NOTA:** el procedimiento
 de instalación se llevará a cabo bajo su propio riesgo). Se les recomienda instalar
 [Fedora](https://getfedora.org/en/workstation/download/), si bien existen muchas
 alternativas tales como [Manjaro](https://manjaro.org/) o
@@ -46,12 +47,56 @@ Busque usted un programa llamado "Terminal" (o algo parecido) en su computadora 
 ejecútelo. El resultado debería ser una ventana con texto como el siguiente (o similar):
 
 ```
-usuario@computadora $
+usuario@computadora:~$
 ```
 
 En esta ventana podremos utilizar el teclado para escribir comandos y presionar `Enter`
 para ejecutarlos y observar el resultado. Aprendamos a ahora a hacer algunas cosas útiles
 con la terminal.
 
+# Manipulando el sistema de archivos
 
+En cualquier momento dado al usar una terminal, nos encontramos "parados" en algún punto
+del sistema de archivos de nuestra computadora. A este punto típicamente se le conoce como
+*Directorio Actual* o *Working Directory*. Podemos saber la *ruta* completa del directorio
+actual con el comando `pwd`:
+
+(En adelante, los ejemplos de comandos siguen el siguiente formato: el *prompt* del shell
+es aquello que precede al símbolo `$`, lo que lo sucede es el comando que se debe entrar,
+y las lineas siguientes que no estén precedidas por el *prompt* representan la salida del
+comando).
+
+```
+usuario@computadora:~$ pwd
+/home/usuario
+```
+
+En donde el `/` inicial representa la raíz del sistema de archivos (el punto inicial de la
+jerarquía) y las subsiguientes palabras separadas por `/` son directorios. La salida de
+`pwd` (`p`rint `w`orking `d`irectory) nos indica que estamos en la carpeta principal del
+usuario `usuario`, que en Linux comunmente se conoce comúnmente como `~`.
+
+A continuación podemos enlistar todos los archivos y directorios contenidos en el
+directorio actual con el comando `ls`:
+
+```
+usuario@computadora:~$ ls
+Desktop   Documents   Music   Picutres    Templates   Videos
+```
+
+Podemos crear un directorio nuevo con el comando `mkdir`:
+
+```
+usuario@computadora:~$ mkdir Directorio
+usuario@computadora:~$ ls
+Desktop   Directorio    Documents   Music   Pictures    Templates   Videos
+```
+
+Podemos cambiar el directorio actual con el comando `mkdir`:
+
+```
+usuario@computadora:~$ cd Directorio
+usuario@computadora:~/Directorio$ pwd
+/home/usuario/Directorio
+```
 
